@@ -1,1 +1,0 @@
-# amplify-rest-api-example
