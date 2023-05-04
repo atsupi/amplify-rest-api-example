@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/item/{id}": {
+      "name": "/item/{id}",
+      "lambdaFunction": "restapiexample2940ddbc",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

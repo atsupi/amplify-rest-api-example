@@ -1,4 +1,20 @@
 {
+  "api": {
+    "restapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "restapiexample2940ddbc"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "restapiexample5a2db6dd": {
       "customAuth": false,
@@ -23,6 +39,51 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "restapiexample2940ddbc": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "dynamoad3a7d96"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_restapiexample2940ddbc_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restapiexample2940ddbc"
+        }
+      ]
+    },
+    "AMPLIFY_function_restapiexample2940ddbc_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restapiexample2940ddbc"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "dynamoad3a7d96": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
     }
   }
 }

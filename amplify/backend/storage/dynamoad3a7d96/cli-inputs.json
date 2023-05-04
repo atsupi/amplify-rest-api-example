@@ -1,0 +1,10 @@
+{
+  "resourceName": "dynamoad3a7d96",
+  "tableName": "itemTable",
+  "partitionKey": {
+    "fieldName": "RideId",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
