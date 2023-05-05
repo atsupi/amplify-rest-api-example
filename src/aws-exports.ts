@@ -23,6 +23,20 @@ const awsmobile = {
     },
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
+    ],
+    "aws_dynamodb_all_tables_region": "ap-northeast-1",
+    "aws_dynamodb_table_schemas": [
+        {
+            "tableName": "itemTable-dev",
+            "region": "ap-northeast-1"
+        }
+    ],
+    "aws_cloud_logic_custom": [
+        {
+            "name": "restapi",
+            "endpoint": "https://h5w4fmx5d1.execute-api.ap-northeast-1.amazonaws.com/dev",
+            "region": "ap-northeast-1"
+        }
     ]
 };
 

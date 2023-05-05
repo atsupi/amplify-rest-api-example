@@ -18,7 +18,7 @@
       "function": {
         "restapiexample2940ddbc": {
           "deploymentBucketName": "amplify-restapiexample-dev-04223-deployment",
-          "s3Key": "amplify-builds/restapiexample2940ddbc-776e6342657849356e7a-build.zip"
+          "s3Key": "amplify-builds/restapiexample2940ddbc-41672b30652b356a4f77-build.zip"
         }
       },
       "storage": {
